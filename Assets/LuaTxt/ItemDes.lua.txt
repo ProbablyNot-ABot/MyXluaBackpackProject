@@ -1,0 +1,148 @@
+-- 道具描述面板组件
+BasePanel:subClass("ItemDes")
+
+-- 成员变量
+ItemDes.imgIcon = nil
+ItemDes.txtName = nil
+ItemDes.txtDes = nil
+ItemDes.currentItemData = nil
+ItemDes.bgButton = nil -- 背景点击区域
+
+-- 初始化方法
+function ItemDes:Init(name)
+    self.base.Init(self, name)
+    if self.isInitEvent == false then
+        -- 获取控件引用
+        self.imgIcon = self:GetControl("imgIcon", "Image")
+        self.txtName = self:GetControl("txtName", "Text")
+        self.txtDes = self:GetControl("txtDes", "Text")
+        
+        -- 获取或添加背景点击组件
+        self.bgButton = self.panelObj:GetComponent(typeof(Button))
+        if not self.bgButton then
+            self.bgButton = self.panelObj:AddComponent(typeof(Button))
+        end
+        
+        -- 设置背景点击事件（点击空白处隐藏）
+        self.bgButton.onClick:AddListener(function()
+            self:HideMe()
+        end)
+        
+        -- 初始隐藏面板
+        self.panelObj:SetActive(false)
+        
+        self.isInitEvent = true
+    end
+end
+
+-- 显示面板（重写基类方法）
+function ItemDes:ShowMe(name)
+    if not self.panelObj then
+        self:Init(name)
+    end
+    self.panelObj:SetActive(true)
+end
+
+-- 隐藏面板（重写基类方法）
+function ItemDes:HideMe()
+    if self.panelObj then
+        self.panelObj:SetActive(false)
+        self:ClearInfo()
+    end
+end
+
+-- 显示道具信息
+-- @param itemData: 道具数据 {id = 道具ID, num = 数量}
+function ItemDes:ShowItemInfo(itemData)
+    if not itemData or not itemData.id then
+        print("错误：无效的道具数据")
+        return
+    end
+    
+    -- 保存当前道具数据
+    self.currentItemData = itemData
+    
+    -- 从配置表中获取道具详细信息
+    local itemConfig = ItemData[itemData.id]
+    if not itemConfig then
+        print("错误：找不到道具ID为 " .. itemData.id .. " 的配置信息")
+        return
+    end
+    
+    -- 设置道具图标
+    if itemConfig.icon and self.imgIcon then
+        local strs = string.split(itemConfig.icon, "_")
+        if strs and #strs >= 2 then
+            local spriteAtlas = ABManager:LoadRes("ui", strs[1], typeof(SpriteAtlas))
+            if spriteAtlas then
+                self.imgIcon.sprite = spriteAtlas:GetSprite(strs[2])
+            end
+        end
+    end
+    
+    -- 设置道具名称和数量
+    if self.txtName then
+        local nameText = itemConfig.name or "未知道具"
+        if itemData.num and itemData.num > 1 then
+            nameText = nameText .. " ×" .. tostring(itemData.num)
+        end
+        self.txtName.text = nameText
+    end
+    
+    -- 设置道具描述
+    if self.txtDes then
+        self.txtDes.text = itemConfig.tips or "暂无描述"
+    end
+    
+    -- 显示面板
+    self:ShowMe("ItemDes")
+end
+
+-- 更新道具信息（如果面板已显示，则更新内容）
+function ItemDes:UpdateItemInfo(itemData)
+    if self.panelObj and self.panelObj.activeSelf then
+        self:ShowItemInfo(itemData)
+    else
+        self:ShowItemInfo(itemData)
+    end
+end
+
+-- 清空显示信息
+function ItemDes:ClearInfo()
+    if self.imgIcon then
+        self.imgIcon.sprite = nil
+    end
+    if self.txtName then
+        self.txtName.text = ""
+    end
+    if self.txtDes then
+        self.txtDes.text = ""
+    end
+    self.currentItemData = nil
+end
+
+-- 获取当前显示的道具数据
+function ItemDes:GetCurrentItemData()
+    return self.currentItemData
+end
+
+-- 检查面板是否显示
+function ItemDes:IsShowing()
+    return self.panelObj and self.panelObj.activeSelf
+end
+
+-- 静态方法：显示或更新道具信息
+function ItemDes.ShowItemInfoStatic(itemData)
+    if not itemData then
+        ItemDes:HideMe()
+        return
+    end
+    
+    -- 如果点击的是同一个道具，且面板已显示，则隐藏
+    if ItemDes.currentItemData and ItemDes.currentItemData.id == itemData.id and ItemDes:IsShowing() then
+        ItemDes:HideMe()
+    else
+        -- 否则显示或更新信息
+        ItemDes:UpdateItemInfo(itemData)
+    end
+end

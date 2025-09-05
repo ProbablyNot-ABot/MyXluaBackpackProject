@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|d:\\unity2022\\xiangmu\\xluabackpack\\assets\\scripts\\csharpcalllualist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\csharpcalllualist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5782BB8-D264-7896-AF81-45872EAE6681}|Assembly-CSharp-Editor.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\editor\\luacopyeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5782BB8-D264-7896-AF81-45872EAE6681}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\luacopyeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\scripts\\projectbase\\luamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectbase\\luamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\scripts\\projectbase\\abmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectbase\\abmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{de1fc918-f32e-4dd7-a915-1792a051f26b}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CSharpCallLuaList.cs",
+              "DocumentMoniker": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\CSharpCallLuaList.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CSharpCallLuaList.cs",
+              "ToolTip": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\CSharpCallLuaList.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CSharpCallLuaList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T11:07:41.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LuaManager.cs",
+              "DocumentMoniker": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\ProjectBase\\LuaManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ProjectBase\\LuaManager.cs",
+              "ToolTip": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\ProjectBase\\LuaManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ProjectBase\\LuaManager.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T17:09:19.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LuaCopyEditor.cs",
+              "DocumentMoniker": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Editor\\LuaCopyEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\LuaCopyEditor.cs",
+              "ToolTip": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Editor\\LuaCopyEditor.cs",
+              "RelativeToolTip": "Assets\\Editor\\LuaCopyEditor.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:22:35.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\Main.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Main.cs",
+              "ToolTip": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\Main.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T08:27:01.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ABManager.cs",
+              "DocumentMoniker": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\ProjectBase\\ABManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ProjectBase\\ABManager.cs",
+              "ToolTip": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\ProjectBase\\ABManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ProjectBase\\ABManager.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAewFsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T08:05:14.866Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 616,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 616,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 616,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+--用到之前讲过的知识 Object
+--生成一个table 继承Object 主要目的是它里面实现的继承方法subClass
+Object:subClass("ItemGrid")
+--“成员变量”
+ItemGrid.obj = nil
+ItemGrid.imgIcon = nil
+ItemGrid.Text = nil
+
+--成员函数
+--实例化格子对象
+function ItemGrid:Init(father,posX,posY)
+    print("--------------------------------------")
+    --实例化格子对象
+    self.obj = ABManager:LoadRes("ui","ItemGrid")
+    --设置父对象
+    self.obj.transform:SetParent(father,false)
+    --继续设置它的位置
+    self.obj.transform.localPosition = Vector3(posX,posY,0)
+    --找控件
+    self.imgIcon = self.obj.transform:Find("backIcon"):GetComponent(typeof(Image))
+    self.Text = self.obj.transform:Find("Text"):GetComponent(typeof(Text))
+
+    -- 直接查找按钮组件，不依赖BasePanel
+    self:FindAndSetupButton()
+end
+
+function ItemGrid:FindAndSetupButton()
+    -- 添加点击事件
+    local button = self.obj:GetComponent(typeof(Button))
+    if not button then
+        button = self.obj:AddComponent(typeof(Button))
+    end
+    
+    -- 移除可能存在的旧监听器，避免重复添加
+    button.onClick:RemoveAllListeners()
+    button.onClick:AddListener(function()
+        self:OnClick()
+    end)
+end
+
+-- 添加点击处理方法
+-- 添加点击处理方法
+function ItemGrid:OnClick()
+    -- 显示道具信息
+    if self.data then
+        ItemDes.ShowItemInfoStatic(self.data)
+    end
+end
+
+--初始化格子信息
+--data 是外面传入的道具信息 里面包含了 id和num
+function ItemGrid:InitData(data)
+    self.data = data  -- 保存数据引用
+
+    local itemdata = ItemData[data.id]
+    --想要的是data中的图片信息
+    --根据名字 先加载图集 再加载图集中的 图标信息
+    local strs = string.split(itemdata.icon,"_")
+    --加载图集
+    local spriteAtlas = ABManager:LoadRes("ui",strs[1],typeof(SpriteAtlas))
+    --加载图标
+    self.imgIcon.sprite = spriteAtlas:GetSprite(strs[2])
+    --设置它的数量
+    self.Text.text = data.num
+
+    -- 确保点击事件已添加（防止 Init 时对象还未准备好）
+    if not self.obj:GetComponent(typeof(Button)) then
+        self:AddClickEvent()
+    end
+end
+
+--加自己的逻辑
+function ItemGrid:Destroy()
+    GameObject.Destroy(self.obj)
+    self.obj = nil
+end
