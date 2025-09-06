@@ -23,7 +23,6 @@
 - **AB 包资源管理**：UI 预制体、图片、配置等资源通过 AB 包动态加载，优化资源占用
 - **UI 组件化设计**：以 BasePanel.lua 为面板基类，其余面板继承自改基类，新增功能无需重复开发基础逻辑
 
-
 ## 技术栈
 
 | 类别         | 技术/工具                  | 说明                     |
@@ -34,3 +33,34 @@
 | UI 系统      | Unity UGUI                | 搭建背包、商店界面       |
 | 数据格式     | JSON                      | 存储道具配置、玩家数据   |
 | 资源管理     | AB 包（AssetBundle）      | 资源打包与动态加载       |
+
+## 项目结构
+
+```text
+Assets/
+├── Lua/                  # Lua 业务逻辑核心目录
+│   ├── BagPanel.lua      # 背包面板逻辑（分类切换、道具显示）
+│   ├── BasePanel.lua     # UI 面板基类（封装显示/隐藏、事件绑定）
+│   ├── InitClass.lua     # Lua初始化脚本（定义常用别名）
+│   ├── ItemData.lua      # 道具配置解析（读取 JSON 配置）
+│   ├── ItemDes.lua       # 道具详情面板（展示道具完整信息）
+│   ├── ItemGrid.lua      # 道具格子组件（显示图标、数量、点击事件）
+│   ├── ItemManager.lua   # 道具管理单例（添加道具到背包）
+│   ├── JsonUtility.lua   # 将Json数据读取到Lua中的表中进行存储
+│   ├── Main.lua          # 程序入口（初始化系统、加载配置）
+│   ├── MainPanel.lua     # 主面板UI（用于打开背包和商店）
+│   ├── Object.lua        # Lua 面向对象基类（new和subClass继承）
+│   ├── PlayerData.lua    # 玩家数据管理（背包数据存储，暂时只有固定数据）
+│   ├── ShopItemData.lua  # 商店数据管理（商店道具的后端数据）
+│   ├── ShopPanel.lua     # 商店面板逻辑（商品加载、分类、搜索与购买处理）
+│   ├── SplitTools.lua    # 切割字符串逻辑
+│   └── TipsPanel.lua     # 消息提示框（购买道具后提示购买结果）
+├── ABRes/                # 资源文件目录（用于打包 AB 包）
+│   ├── UI/               # UI 预制体（背包面板、商店面板、道具格子等）
+│   ├── Json/             # 配置文件（ItemData.json 道具配置）
+│   └── Sprites/          # 图片资源（道具图标、UI 背景等）
+├── Scripts/              # C# 核心代码目录（与 Lua 交互、资源管理）
+│   ├── Main.cs           # 用于调用lua代码
+│   ├── ProjectBase/      # 管理器文件目录
+│   ├── ABManager.cs      # AB包加载逻辑
+    └── LuaManager.cs     # Lua管理器（初始化lua解析器、执行lua代码等）
