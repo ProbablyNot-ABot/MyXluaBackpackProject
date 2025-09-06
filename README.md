@@ -1,5 +1,5 @@
 # MyXluaBackpackProject
-# Lua背包系统
+# xLua背包系统
 
 基于 Unity + Lua 实现的完整背包商店系统，使用 xLua 框架，支持道具分类管理、商店购买等核心功能
 
