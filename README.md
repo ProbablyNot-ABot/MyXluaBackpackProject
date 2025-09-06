@@ -63,4 +63,4 @@ Assets/
 │   ├── Main.cs           # 用于调用lua代码
 │   ├── ProjectBase/      # 管理器文件目录
 │   ├── ABManager.cs      # AB包加载逻辑
-    └── LuaManager.cs     # Lua管理器（初始化lua解析器、执行lua代码等）
+│   └── LuaManager.cs     # Lua管理器（初始化lua解析器、执行lua代码等）
