@@ -51,7 +51,7 @@ Assets/
 │   ├── MainPanel.lua     # 主面板UI（用于打开背包和商店）
 │   ├── Object.lua        # Lua 面向对象基类（new和subClass继承）
 │   ├── PlayerData.lua    # 玩家数据管理（背包数据存储，暂时只有固定数据）
-│   ├── ShopItemData.lua  # 商店数据管理（商店道具的后端数据）
+│   ├── ShopItemData.lua  # 商店数据管理（商店道具的后端数据以及商店道具管理）
 │   ├── ShopPanel.lua     # 商店面板逻辑（商品加载、分类、搜索与购买处理）
 │   ├── SplitTools.lua    # 切割字符串逻辑
 │   └── TipsPanel.lua     # 消息提示框（购买道具后提示购买结果）
