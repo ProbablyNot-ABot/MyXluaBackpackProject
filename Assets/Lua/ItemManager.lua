@@ -28,10 +28,13 @@ function ItemManager:BuyItem(itemId, count)
         return false
     end
     -- TODO: 判断金钱逻辑
-    self:AddItemToPlayer(itemId, count)
-    print("购买成功！")
-    TipsPanel:Show(true)
-    return true
+    
+    if self:AddItemToPlayer(itemId, count) then
+        TipsPanel:Show("购买成功")
+        return true
+    end
+
+    return false
 end
 
 function ItemManager:AddItemToPlayer(itemId,count)

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\scripts\\projectbase\\luamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectbase\\luamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|d:\\unity2022\\xiangmu\\xluabackpack\\assets\\scripts\\csharpcalllualist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\scripts\\csharpcalllualist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\csharpcalllualist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|d:\\unity2022\\xiangmu\\xluabackpack\\assets\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5782BB8-D264-7896-AF81-45872EAE6681}|Assembly-CSharp-Editor.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\editor\\luacopyeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5782BB8-D264-7896-AF81-45872EAE6681}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\luacopyeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\scripts\\projectbase\\luamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectbase\\luamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A961831-8303-BE3B-8EC0-F1BD0372F130}|Assembly-CSharp.csproj|D:\\Unity2022\\XiangMu\\xLuaBackpack\\assets\\scripts\\projectbase\\abmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,26 +48,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\CSharpCallLuaList.cs",
               "ToolTip": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\CSharpCallLuaList.cs",
               "RelativeToolTip": "Assets\\Scripts\\CSharpCallLuaList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T11:07:41.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "LuaManager.cs",
               "DocumentMoniker": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\ProjectBase\\LuaManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ProjectBase\\LuaManager.cs",
               "ToolTip": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\ProjectBase\\LuaManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ProjectBase\\LuaManager.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAUwIgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T17:09:19.599Z"
+              "WhenOpened": "2025-08-21T17:09:19.599Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LuaCopyEditor.cs",
               "DocumentMoniker": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Editor\\LuaCopyEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Editor\\LuaCopyEditor.cs",
@@ -79,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Main.cs",
               "DocumentMoniker": "D:\\Unity2022\\XiangMu\\xLuaBackpack\\Assets\\Scripts\\Main.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Main.cs",

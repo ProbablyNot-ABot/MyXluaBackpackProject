@@ -10,6 +10,7 @@ require("ItemData")
 --初始化玩家数据
 require("PlayerData")
 require("ShopItemData")
+ShopItemData.InitData()
 PlayerData:Init()
 ShopItemData:Init()
 
